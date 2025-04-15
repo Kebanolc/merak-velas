@@ -1,68 +1,98 @@
-body {
-  font-family: 'Arial', sans-serif;
+/* Reset básico */
+* {
   margin: 0;
   padding: 0;
-  background-color: #fffaf7;
-  color: #3c2a21;
-  line-height: 1.6;
+  box-sizing: border-box;
 }
 
+/* Tipografía general */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fffaf6;
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+/* Encabezado */
 header {
   text-align: center;
-  padding: 2rem;
-  background-color: #fce8e0;
+  padding: 40px 20px;
+  background-color: #fdf1ec;
+  border-bottom: 2px solid #f0e0d6;
 }
 
-.logo {
-  width: 80px;
+header img {
+  width: 100px;
   height: auto;
+  margin-bottom: 15px;
 }
 
-.icono-red {
-  width: 24px;
-  margin-top: 10px;
+header h1 {
+  font-size: 2.5rem;
+  color: #b96b63;
+  margin-bottom: 10px;
 }
 
+header p {
+  font-size: 1.1rem;
+  color: #5f4b3b;
+}
+
+/* Secciones */
 section {
-  padding: 2rem;
-  max-width: 800px;
-  margin: auto;
+  margin: 40px 0;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
 }
 
-h1, h2 {
-  color: #6b3e26;
+/* Títulos */
+h2 {
+  font-size: 1.8rem;
+  color: #b96b63;
+  margin-bottom: 15px;
 }
 
-ul {
-  list-style-type: none;
-  padding: 0;
+/* Galería */
+.galeria {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-ul li {
-  background-color: #fff1ec;
-  margin-bottom: 1rem;
-  padding: 1rem;
-  border-left: 4px solid #c2957d;
-  border-radius: 4px;
+.galeria img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-a {
-  color: #9b5d42;
-  text-decoration: none;
+/* Enlace Instagram */
+.instagram {
+  text-align: center;
+  margin-top: 30px;
 }
 
-.boton {
-  display: inline-block;
-  margin-top: 1rem;
-  padding: 0.7rem 1.5rem;
-  background-color: #c2957d;
-  color: white;
-  border-radius: 5px;
+.instagram a img {
+  width: 40px;
+  height: 40px;
+  transition: transform 0.2s ease;
 }
 
+.instagram a:hover img {
+  transform: scale(1.1);
+}
+
+/* Footer */
 footer {
   text-align: center;
-  padding: 1rem;
-  background-color: #fce8e0;
+  margin-top: 40px;
+  padding: 20px;
   font-size: 0.9rem;
+  color: #777;
+  border-top: 1px solid #f0e0d6;
 }
