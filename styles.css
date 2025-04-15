@@ -1,0 +1,75 @@
+/* Estilo general */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fff9f4;
+  color: #4e3e2f;
+  text-align: center;
+}
+
+/* Encabezado */
+header {
+  background-color: #fbeee0;
+  padding: 40px 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  font-size: 3em;
+  margin: 0;
+  color: #d6725b;
+}
+
+header p {
+  font-size: 1.2em;
+  margin-top: 10px;
+  color: #6a4e42;
+}
+
+/* Galería de velas */
+.galeria {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 40px 20px;
+  gap: 20px;
+}
+
+.galeria img {
+  width: 250px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.galeria img:hover {
+  transform: scale(1.05);
+}
+
+/* Sección de manifestación */
+.manifiesta {
+  padding: 40px 20px;
+  background-color: #fff1e6;
+  border-top: 2px dashed #e0b9a0;
+  border-bottom: 2px dashed #e0b9a0;
+}
+
+.manifiesta h2 {
+  font-size: 2em;
+  color: #b2675e;
+  margin-bottom: 10px;
+}
+
+.manifiesta p {
+  font-size: 1.1em;
+  color: #5a4034;
+}
+
+/* Footer */
+footer {
+  padding: 20px;
+  font-size: 0.9em;
+  background-color: #fbeee0;
+  color: #8c6e5a;
+}
