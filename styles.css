@@ -1,98 +1,70 @@
-/* Reset básico */
-* {
+/* styles.css */
+
+/* Estilos generales */
+body {
+  font-family: 'Segoe UI', sans-serif;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  background-color: #fff;
+  color: #1a1a1a;
 }
 
-/* Tipografía general */
-body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #fffaf6;
-  color: #333;
-  line-height: 1.6;
-  padding: 20px;
-}
-
-/* Encabezado */
 header {
-  text-align: center;
-  padding: 40px 20px;
-  background-color: #fdf1ec;
-  border-bottom: 2px solid #f0e0d6;
+  background-color: #000;
+  color: #fff;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-header img {
-  width: 100px;
-  height: auto;
-  margin-bottom: 15px;
+.logo {
+  height: 60px;
 }
 
-header h1 {
-  font-size: 2.5rem;
-  color: #b96b63;
-  margin-bottom: 10px;
+.icono-red {
+  height: 28px;
+  filter: invert(100%);
 }
 
-header p {
-  font-size: 1.1rem;
-  color: #5f4b3b;
-}
-
-/* Secciones */
+/* Sección principal */
 section {
-  margin: 40px 0;
-  padding: 20px;
-  background-color: #ffffff;
-  border-radius: 12px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  padding: 3rem 2rem;
+  max-width: 960px;
+  margin: auto;
 }
 
 /* Títulos */
-h2 {
-  font-size: 1.8rem;
-  color: #b96b63;
-  margin-bottom: 15px;
+h1, h2 {
+  color: #000;
+  border-bottom: 2px solid #d4af37; /* Detalles dorados */
+  display: inline-block;
+  padding-bottom: 5px;
+  margin-bottom: 1rem;
 }
 
-/* Galería */
+p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Galería de productos */
 .galeria {
-  display: flex;
-  gap: 10px;
-  flex-wrap: wrap;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+  margin-top: 2rem;
 }
 
 .galeria img {
-  width: 200px;
-  height: 200px;
-  object-fit: cover;
-  border-radius: 10px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  height: auto;
+  border: 2px solid #d4af37; /* Detalles dorados */
+  border-radius: 8px;
 }
 
-/* Enlace Instagram */
-.instagram {
-  text-align: center;
-  margin-top: 30px;
-}
-
-.instagram a img {
-  width: 40px;
-  height: 40px;
-  transition: transform 0.2s ease;
-}
-
-.instagram a:hover img {
-  transform: scale(1.1);
-}
-
-/* Footer */
-footer {
-  text-align: center;
-  margin-top: 40px;
-  padding: 20px;
-  font-size: 0.9rem;
-  color: #777;
-  border-top: 1px solid #f0e0d6;
-}
+/* Botón */
+.boton {
+  display: inline-block;
+  background-color: #d4
