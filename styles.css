@@ -68,3 +68,14 @@ p {
 .boton {
   display: inline-block;
   background-color: #d4
+  /* Centrar todo el texto en la página */
+body {
+  text-align: center;
+}
+
+/* También aseguramos que las imágenes estén centradas */
+img {
+  display: block;
+  margin: 0 auto;
+}
+
